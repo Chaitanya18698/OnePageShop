@@ -1,0 +1,19 @@
+<div class="all"></div>
+<h1 style="text-align: center">Store</h1>
+
+<table class="tabl" border="1" align="center" >
+    <h2>Catalog</h2>
+  <tbody *ngFor="let items of catalog let i=index">
+     
+  <tr>
+     
+    <td>Item
+    
+  <pre>      {{items.item}}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button (click)="addcart(items)">Add to cart</button>
+        {{items.price}}</pre>
+  </td>
+</tr>
+  </tbody>
+</table>
+
+<router-outlet></router-outlet>

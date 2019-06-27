@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+
+
+ <app-catalog (tmp)="ordrs=$event" (amt)="orders1=$event"></app-catalog>
+ <app-cart (dlt)="orders1=$event" [amount1]="orders1" [citems]="ordrs" ></app-cart>
+ <app-checkout  [amount1]="orders1" ></app-checkout>
+ <!-- <app-checkout [b]="ordr" ></app-checkout> -->
+</div>
+
+  
+<router-outlet></router-outlet>
+                                
